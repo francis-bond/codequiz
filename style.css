@@ -1,0 +1,14 @@
+div {
+    /* margin-top: 20px; */
+    background-color: bisque;
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    position: fixed;
+    top: 15%;
+    left: 40%;
+}
+
+button{
+    margin: 10px;
+}

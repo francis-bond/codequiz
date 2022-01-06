@@ -2,8 +2,8 @@
 // Make a start screen with a start button
 // Event listener to start program
     //When start button pressed
-        // make an array of questions and answers 
-        // show random question and answers
+        // show questions and answers 
+        // show question and answers
             // check to see if correct or not
             // if correct
                 // add a point to score counter
@@ -19,3 +19,26 @@
             // make highscore save to local storage
             // give option to play again
             // make clear button, erase local storage
+
+var startbtn = document.querySelector("#startbutton");
+var startScreen = document.querySelector(".startscreen");
+var question1 = document.querySelector("#question1");
+var question2 = document.querySelector("#question2");
+var question3 = document.querySelector("#question3");
+var allDone = document.querySelector(".alldone");
+var highScore = document.querySelector(".highscore");
+var secondsLeft = 60;
+
+question1.hidden = true;
+question2.hidden = true;
+question3.hidden = true;
+allDone.hidden = true;
+highScore.hidden = true;
+
+startbtn.addEventListener("click", startGame());
+
+function startGame() {
+    question1.hidden = false;
+    startScreen.hidden = true;
+
+}
